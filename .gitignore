@@ -4,3 +4,4 @@
 .git/
 .git
 init.vim
+bundle
