@@ -4,4 +4,5 @@
 .git/
 .git
 init.vim
+!bundle/Vundle.vim
 bundle
