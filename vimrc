@@ -32,6 +32,11 @@ Plugin 'mattn/gist-vim'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'nvie/vim-flake8'
+Plugin 'fxn/vim-monochrome'
+Plugin 'ewilazarus/preto'
+Plugin 'morhetz/gruvbox'
+Plugin 'chriskempson/tomorrow-theme'
+Plugin 'owickstrom/vim-colors-paramount'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -187,7 +192,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
-colorscheme solarized
+colorscheme monochrome
 set guifont=Inconsolata:h15
 set guioptions-=L
 
