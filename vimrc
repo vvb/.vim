@@ -195,6 +195,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
+set t_Co=256
 colorscheme monochrome
 colorscheme donbass
 set guifont=Inconsolata:h15
