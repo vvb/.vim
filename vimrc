@@ -37,6 +37,9 @@ Plugin 'ewilazarus/preto'
 Plugin 'morhetz/gruvbox'
 Plugin 'chriskempson/tomorrow-theme'
 Plugin 'owickstrom/vim-colors-paramount'
+Plugin 'whatyouhide/vim-gotham'
+Plugin 'RussellBradley/vim-spurs-away'
+Plugin 'vim-scripts/donbass.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -193,6 +196,7 @@ let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
 colorscheme monochrome
+colorscheme donbass
 set guifont=Inconsolata:h15
 set guioptions-=L
 
@@ -236,6 +240,7 @@ map k gk
 map j gj
 
 nnoremap <F6> :setlocal spell! spell?<CR>
+nnoremap <F8> :Tagbar<CR>
 
 " trim all whitespaces away
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
@@ -457,6 +462,8 @@ let g:vim_json_syntax_conceal = 0
 let blacklist = ['markdown', 'md']
 autocmd BufWritePre * StripWhitespace
 
+" Disable auto detection of gopath. This causes trouble with vim-go
+let g:go_autodetect_gopath = 0
 
 
 
