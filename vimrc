@@ -40,11 +40,13 @@ Plugin 'owickstrom/vim-colors-paramount'
 Plugin 'whatyouhide/vim-gotham'
 Plugin 'RussellBradley/vim-spurs-away'
 Plugin 'vim-scripts/donbass.vim'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'vvb/vim-autopep8'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
+filetype plugin on
 
 set encoding=utf-8
 set noerrorbells                " No beeps
@@ -197,7 +199,7 @@ let g:solarized_termtrans=1
 " let g:rehash256 = 1
 set t_Co=256
 colorscheme monochrome
-colorscheme donbass
+" colorscheme donbass
 set guifont=Inconsolata:h15
 set guioptions-=L
 
@@ -468,6 +470,11 @@ let g:go_autodetect_gopath = 0
 
 
 
+autocmd FileType python map <buffer> <F3> :call Autopep8()<CR>
+let g:autopep8_max_line_length=79
+let g:autopep8_aggressive=1
+let g:autopep8_aggressive_aggressive=1
+let g:autopep8_disable_show_diff=1
 
 
 
