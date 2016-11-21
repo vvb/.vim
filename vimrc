@@ -42,6 +42,7 @@ Plugin 'RussellBradley/vim-spurs-away'
 Plugin 'vim-scripts/donbass.vim'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'vvb/vim-autopep8'
+Plugin 'vim-scripts/svnj.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
