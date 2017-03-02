@@ -43,6 +43,10 @@ Plugin 'vim-scripts/donbass.vim'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'vvb/vim-autopep8'
 Plugin 'vim-scripts/svnj.vim'
+Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'burnettk/vim-angular'
+Plugin 'mattn/emmet-vim'
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -69,6 +73,7 @@ set hidden
 set ruler                       " Show the cursor position all the time
 set fileformats=unix,dos,mac    " Prefer Unix over Windows over OS 9 formats
 
+let loaded_matchparen = 1
 set noshowmatch                 " Do not show matching brackets by flickering
 set noshowmode                  " We show the mode with airlien or lightline
 set incsearch                   " Shows the match while typing
@@ -192,16 +197,18 @@ if has('gui_running')
   set regexpengine=1
   syntax enable
 endif
-set background=dark
+" set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
 set t_Co=256
 colorscheme monochrome
+" colorscheme default
 " colorscheme donbass
 set guifont=Inconsolata:h15
 set guioptions-=L
+" set bg=light
 
 " This comes first, because we have mappings that depend on leader
 " With a map leader it's possible to do extra key combinations
@@ -476,6 +483,8 @@ let g:autopep8_aggressive=1
 let g:autopep8_aggressive_aggressive=1
 let g:autopep8_disable_show_diff=1
 
+
+let vim_markdown_preview_github=1
 
 
 
